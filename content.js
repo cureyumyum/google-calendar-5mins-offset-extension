@@ -1,5 +1,5 @@
 /*
- * Google Calendar 5-Minute Start Offset
+ * Google Calendar 5-min Offset
  */
 
 /**
@@ -46,11 +46,31 @@ function simulateRealClick(element) {
 }
 
 
+// --- Alt 
+let altPressedOnLastClick = false;
+
+// 
+document.addEventListener('mousedown', (event) => {
+    // 
+    if (event.target.closest('div[role="dialog"]')) {
+        return;
+    }
+    altPressedOnLastClick = event.altKey;
+}, true); // 
+
+
 /**
  * * @param {HTMLElement} dialog - 
  */
 function observeDialog(dialog) {
   
+  // 
+  if (altPressedOnLastClick) {
+      altPressedOnLastClick = false; // 
+      return;
+  }
+  
+  // 
   if (dialog.dataset.offsetDone) {
     return;
   }
