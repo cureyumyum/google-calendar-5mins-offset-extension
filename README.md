@@ -48,13 +48,17 @@ Googleカレンダーで「10:00」の枠をクリックして「10:05」に直�
 この拡張機能はChromeウェブストアで公開されていません。以下の手順で「デベロッパーモード」で手動インストールする必要があります。
 
 1. **ファイルの準備**
-このリポジトリ（または提供されたファイル）をダウンロードし、PC上の任意の場所（例: `C:\Users\YourName\Documents\google-calendar-offset`）に保存します。
-フォルダ内には `manifest.json` と `content.js` の2つのファイルがある状態にします。
+このリポジトリ（または提供されたファイル）をダウンロードし、PC上の任意の場所（例: `C:\Users\YourName\Documents\google-calendar-5mins-offset-extension`）に保存します。
+フォルダ内には `manifest.json`、`content.js`、`icon`ディレクトリがある状態にします。
 
 ```
     google-calendar-5mins-offset-extension/
-    ├── manifest.json
-    └── content.js
+        ├── manifest.json
+        ├── content.js
+        └── icon/
+            ├── icon16.png
+            ├── icon48.png
+            └── icon128.png
 ```
     
 2. **Chrome拡張機能ページを開く**
