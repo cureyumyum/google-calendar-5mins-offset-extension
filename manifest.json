@@ -1,8 +1,13 @@
 {
   "manifest_version": 3,
   "name": "Google Calendar 5-min Offset (Popup)",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Checks the mini-popup and applies a 5-min offset.",
+  "icons": {
+    "16": "icon/icon16.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"
+  },
   "permissions": [],
   "host_permissions": [
     "https://calendar.google.com/*"
