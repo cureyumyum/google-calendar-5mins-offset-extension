@@ -53,12 +53,12 @@ Googleカレンダーで「10:00」の枠をクリックして「10:05」に直�
 
 ```
     google-calendar-5mins-offset-extension/
-        ├── manifest.json
-        ├── content.js
-        └── icon/
-            ├── icon16.png
-            ├── icon48.png
-            └── icon128.png
+    ├── manifest.json
+    ├── content.js
+    └── icon/
+        ├── icon16.png
+        ├── icon48.png
+        └── icon128.png
 ```
     
 2. **Chrome拡張機能ページを開く**
